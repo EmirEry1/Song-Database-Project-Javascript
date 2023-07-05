@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add New Playlist</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <form method="get" onsubmit="getSongsBySearch()" > -->
+
+
+    <input id ="searchField" type="text" name="" placeholder="Search">
+    <input type="button" onclick="getSongsBySearch(document.getElementById('searchField').value)" value="Get Songs"/>
+    <!-- <input type="submit" value="Search" > -->
+    <!-- </form> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <table id="songTable" border = 2>
+      <tr>
+          <th>Artist</th>
+          <th>Song</th>
+          <th>Album</th>
+          <th>Length</th>
+      </tr>
+    </table> -->
+    <div id="songList">
+       <b>Searched Songs</b>
+    </div>
+
+
+    <br>
+    <h3>Create a Playlist</h3>
+    <!-- <form method = "post" onsubmit="createPlayList()"> -->
+    <input id="playlistNameField" type="text" name="">
+    <input type="button" name="" value="Create" onclick="createPlayList(document.getElementById('playlistNameField').value)">
+    <!-- </form> -->
+    <br>
+
+    <div id="createdPlaylist">
+
+    </div>
+
+    <br>
+
+    <a href="myplaylists.html">View All Playlists</a>
+
+  </body>
+</html>
